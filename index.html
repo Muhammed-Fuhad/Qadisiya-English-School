@@ -14,19 +14,21 @@
         <title>Qadisiya English School</title>
         <!-- icon link -->
         <link rel = "icon" href = "assets/img/icon.png" type = "image/x-icon">
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
 
         <section class="header">
-            <nav>
+            <nav id="navbar" class="sticky">
                 <a href="index.html"><h3>Qadisiya English School</h3></a>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#Portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -39,6 +41,79 @@
             </div>
         </section>
 
+        <section>
+            <div  class="ourmission">
+                <h1>OUR MISSIONS</h1>
+                <p>The Mission Of Our School</p>
+            </div>
+            <div class="ourmissioncontent">
+                <p>
+                    The Qadisiya English School Is An Muslim School That <br>
+                    Prepares All Students For Successful Careers And Succesful Person In Their Life . <br>
+                    Our School's Missions Makes Students A Good Person In Their Life.
+                </p>
+            </div>
+        </section>
+
+        <!------- About ------>
+
+        <section>
+            <div id="about" class="about">
+                <h1>ABOUT</h1>
+                <p>About Our School</p>
+            </div>
+            <div class="abouttext">
+                <img class="aboutimg" src="assets/img/about.png" alt="">
+                <p>QADISIYA ENG. SCHOOL was established in 2002. <br> 
+                    It is located in Urban area, KOZHIKODE district of Kerala. <br>
+                    The school consists of Grades from 1 to degree. <br>
+                    The school has  library,smartclass,computer lab and science lab. <br>
+                    The Chair man of Qadisiya English School Is Sayyid Thurab Thangal. <br>
+                    </p>
+            </div>
+        </section>
+
+        <!------- Portfolio ------>
+<section>
+    <div id="Portfolio" class="Portfolio">
+        <h1>Portfolio</h1>
+        <p>Images of school and events </p>
+    </div>
+
+    <div class="wrapper">
+        <!-- filter Items -->
+        <nav>
+            <div class="items">
+                <span class="item active" data-name="all">All</span>
+                <span class="item" data-name="event">Events</span>
+                <span class="item" data-name="school">School Photos</span>
+            </div>
+            </nav>
+            <!-- filter Images -->
+            <div class="gallery">
+                <div class="image" data-name="event"><span><img src="assets/img/events1.jpg" alt=""></span></div>
+                <div class="image" data-name="event"><span><img src="assets/img/events2.jpg" alt=""></span></div>
+                <div class="image" data-name="event"><span><img src="assets/img/events3.jpg" alt=""></span></div>
+                <div class="image" data-name="event"><span><img src="assets/img/events4.jpg" alt=""></span></div>
+                <div class="image" data-name="event"><span><img src="assets/img/events5.jpg" alt=""></span></div>
+                <div class="image" data-name="school"><span><img src="assets/img/perfil.jpg" alt=""></span></div>
+            </div>
+        </div>
+
+        <!-- fullscreen img preview box -->
+
+        <div class="preview-box">
+            <div class="details">
+                <span class="title">Image Category: <p></p></span>
+                <span class="icon fas fa-times"></span>
+            </div>
+            <div class="image-box"><img src="" alt=""></div>
+        </div>
+        <div class="shadow"></div>
+        
+</section>
+        
+        
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
     </body>
