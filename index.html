@@ -80,40 +80,114 @@
         <p>Images of school and events </p>
     </div>
 
-    <div class="wrapper">
-        <!-- filter Items -->
-        <nav>
-            <div class="items">
-                <span class="item active" data-name="all">All</span>
-                <span class="item" data-name="event">Events</span>
-                <span class="item" data-name="school">School Photos</span>
-            </div>
-            </nav>
-            <!-- filter Images -->
-            <div class="gallery">
-                <div class="image" data-name="event"><span><img src="assets/img/events1.jpg" alt=""></span></div>
-                <div class="image" data-name="event"><span><img src="assets/img/events2.jpg" alt=""></span></div>
-                <div class="image" data-name="event"><span><img src="assets/img/events3.jpg" alt=""></span></div>
-                <div class="image" data-name="event"><span><img src="assets/img/events4.jpg" alt=""></span></div>
-                <div class="image" data-name="event"><span><img src="assets/img/events5.jpg" alt=""></span></div>
-                <div class="image" data-name="school"><span><img src="assets/img/perfil.jpg" alt=""></span></div>
-            </div>
-        </div>
+        <!--filter--------->
+        <ul class="portfolio-filter">
+            <li class="list portfolio-filter-active" data-filter="all">All</li>
+            <li class="list" data-filter="events">Events</li>
+            <li class="list" data-filter="school">School Photos</li>
+        </ul>
+    <!--container--------->
+    <div class="portfolio-container">
+        <!--1------------>
+        <a href="assets/img/events1.jpg" class="portfolio-box events" data-lightbox="portfolio">
+            <img alt="" src="assets/img/events1.jpg">
+        </a>
+        <!--2------------>
+        <a href="assets/img/events2.jpg" class="portfolio-box events" data-lightbox="portfolio">
+            <img alt="" src="assets/img/events2.jpg">
+        </a>
+        <!--3------------>
+        <a href="assets/img/events3.jpg" class="portfolio-box events" data-lightbox="portfolio">
+            <img alt="" src="assets/img/events3.jpg">
+        </a>
+        <!--4------------>
+        <a href="assets/img/events4.jpg" class="portfolio-box events" data-lightbox="portfolio">
+            <img alt="" src="assets/img/events4.jpg">
+        </a>
+        <!--5------------>
+        <a href="assets/img/events5.jpg" class="portfolio-box events" data-lightbox="portfolio">
+            <img alt="" src="assets/img/events5.jpg">
+        </a>
+        <!--6------------>
+        <a href="assets/img/perfil.jpg" class="portfolio-box school" data-lightbox="portfolio">
+            <img alt="" src="assets/img/perfil.jpg">
+        </a>
+    </div>
 
-        <!-- fullscreen img preview box -->
-
-        <div class="preview-box">
-            <div class="details">
-                <span class="title">Image Category: <p></p></span>
-                <span class="icon fas fa-times"></span>
-            </div>
-            <div class="image-box"><img src="" alt=""></div>
-        </div>
-        <div class="shadow"></div>
         
 </section>
-        
-        
+
+<!----Contact Us-->
+<section>
+    <div id="contact" class="contactus">
+        <h1>CONTACT US</h1>
+        <p>Get In Touch </p>
+    </div>
+
+    <div class="container">
+        <div class="content">
+        <div class="image-box">
+        <img src="assets/img/contactimg.png" alt=""> 
+        </div>
+        <form action="#">
+        <div class="topic">Send us a message</div>
+            <div class="input-box">
+            <input type="text" required>
+            <label>Enter your name</label>
+        </div>
+        <div class="input-box">
+            <input type="text" required>
+            <label>Enter your email</label>
+            </div>
+            <div class="message-box">
+            <label>Enter your message</label>
+            </div>
+            <div class="input-box">
+            <input type="submit" value="Send Message">
+        </div>
+        </form>
+    </div>
+    </div>
+</section>
+
+<!------ Footer ---->
+
+<footer class="footer-distributed">
+
+    <div class="footer-right">
+
+        <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-behance"></ion-icon></a>
+
+
+    </div>
+
+    <div class="footer-left">
+
+        <p class="footer-links">
+            <a class="link-1" href="#">Home</a>
+
+            <a href="#portfolio">Portfolio</a>
+
+            <a href="#About">About</a>
+
+            <a href="#Contact">Contact</a>
+        </p>
+
+        <p class="credit"> DESIGNED BY <a href="#">WEB CREW</a></p>
+    </div>
+
+</footer>
+
+
+<!--===== Using jquery =====-->
+        <script src="assets/js/jquery.js"></script>
+
+        <script type="text/javascript"></script>
+
+        <script src="js/lightbox.min.js"></script>
+
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
     </body>
