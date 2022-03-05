@@ -298,9 +298,6 @@ p{
   max-width: 1050px;
   width: 100%;
   background: #fff;
-  border-radius: 12px;
-  margin: 0 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 .container .content{
   display: flex;
