@@ -4,34 +4,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== Google Fonts link ====-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <title>Qadisiya English School</title>
-        <!-- icon link -->
-        <link rel = "icon" href = "assets/img/icon.png" type = "image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <title>Menu responsive</title>
     </head>
     <body>
+        <header class="header">
+            <a href="#" class="header__logo">Qadisiya English School</a>
 
-        <section class="header">
-            <nav id="navbar" class="sticky">
-                <a href="index.html"><h3>Qadisiya English School</h3></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#Portfolio">PORTFOLIO</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
+            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+    
+                    <div class="nav__perfil">
+                        <div>
+                            <a href="#" class="nav__name">Qadisiya English School</a>
+                        </div>
+                    </div>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
 
             <div class="text-box">
@@ -39,154 +43,10 @@
                 <p>A Great Place For Education</p>
                 <a href="" class="hero-btn">Visit To Know More</a>
             </div>
-        </section>
+        </header>
 
-        <section>
-            <div  class="ourmission">
-                <h1>OUR MISSIONS</h1>
-                <p>The Mission Of Our School</p>
-            </div>
-            <div class="ourmissioncontent">
-                <p>
-                    The Qadisiya English School Is An Muslim School That <br>
-                    Prepares All Students For Successful Careers And Succesful Person In Their Life . <br>
-                    Our School's Missions Makes Students A Good Person In Their Life.
-                </p>
-            </div>
-        </section>
-
-        <!------- About ------>
-
-        <section>
-            <div id="about" class="about">
-                <h1>ABOUT</h1>
-                <p>About Our School</p>
-            </div>
-            <div class="abouttext">
-                <img class="aboutimg" src="assets/img/about.png" alt="">
-                <p>QADISIYA ENG. SCHOOL was established in 2002. <br> 
-                    It is located in Urban area, KOZHIKODE district of Kerala. <br>
-                    The school consists of Grades from 1 to degree. <br>
-                    The school has  library,smartclass,computer lab and science lab. <br>
-                    The Chair man of Qadisiya English School Is Sayyid Thurab Thangal. <br>
-                    </p>
-            </div>
-        </section>
-
-        <!------- Portfolio ------>
-<section>
-    <div id="Portfolio" class="Portfolio">
-        <h1>Portfolio</h1>
-        <p>Images of school and events </p>
-    </div>
-
-        <!--filter--------->
-        <ul class="portfolio-filter">
-            <li class="list portfolio-filter-active" data-filter="all">All</li>
-            <li class="list" data-filter="events">Events</li>
-            <li class="list" data-filter="school">School Photos</li>
-        </ul>
-    <!--container--------->
-    <div class="portfolio-container">
-        <!--1------------>
-        <a href="assets/img/events1.jpg" class="portfolio-box events" data-lightbox="portfolio">
-            <img alt="" src="assets/img/events1.jpg">
-        </a>
-        <!--2------------>
-        <a href="assets/img/events2.jpg" class="portfolio-box events" data-lightbox="portfolio">
-            <img alt="" src="assets/img/events2.jpg">
-        </a>
-        <!--3------------>
-        <a href="assets/img/events3.jpg" class="portfolio-box events" data-lightbox="portfolio">
-            <img alt="" src="assets/img/events3.jpg">
-        </a>
-        <!--4------------>
-        <a href="assets/img/events4.jpg" class="portfolio-box events" data-lightbox="portfolio">
-            <img alt="" src="assets/img/events4.jpg">
-        </a>
-        <!--5------------>
-        <a href="assets/img/events5.jpg" class="portfolio-box events" data-lightbox="portfolio">
-            <img alt="" src="assets/img/events5.jpg">
-        </a>
-        <!--6------------>
-        <a href="assets/img/perfil.jpg" class="portfolio-box school" data-lightbox="portfolio">
-            <img alt="" src="assets/img/perfil.jpg">
-        </a>
-    </div>
-
-        
-</section>
-
-<!----Contact Us-->
-<section>
-    <div id="contact" class="contactus">
-        <h1>CONTACT US</h1>
-        <p>Get In Touch </p>
-    </div>
-
-    <div class="container">
-        <div class="content">
-        <div class="image-box">
-        <img src="assets/img/contactimg.png" alt=""> 
-        </div>
-        <form action="#">
-        <div class="topic">Send us a message</div>
-            <div class="input-box">
-            <input type="text" required>
-            <label>Enter your name</label>
-        </div>
-        <div class="input-box">
-            <input type="text" required>
-            <label>Enter your email</label>
-            </div>
-            <div class="message-box">
-            <label>Enter your message</label>
-            </div>
-            <div class="input-box">
-            <input type="submit" value="Send Message">
-        </div>
-        </form>
-    </div>
-    </div>
-</section>
-
-<!------ Footer ---->
-
-<footer class="footer-distributed">
-
-    <div class="footer-right">
-
-        <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
-        <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
-        <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-behance"></ion-icon></a>
-
-
-    </div>
-
-    <div class="footer-left">
-
-        <p class="footer-links">
-            <a class="link-1" href="#">Home</a>
-
-            <a href="#portfolio">Portfolio</a>
-
-            <a href="#About">About</a>
-
-            <a href="#Contact">Contact</a>
-        </p>
-
-        <p class="credit"> DESIGNED BY <a href="#">WEB CREW</a></p>
-    </div>
-
-</footer>
-
-
-<!--===== Using jquery =====-->
-        <script src="assets/js/jquery.js"></script>
-
-        <script type="text/javascript"></script>
-
-        <script src="js/lightbox.min.js"></script>
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
