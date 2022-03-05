@@ -6,6 +6,9 @@ function showMenu(){
 function hideMenu(){
     navLinks.style.right = "-200px";
 }
+$('.navLinks a').click(function() {
+  $(".navLinks").collapse('hide');
+});
 
 /*blog-filter-menu----------------------------*/
 $(document).on('click','.portfolio-filter li',function(){
