@@ -7,15 +7,6 @@ const navMenu = document.getElementById('nav-menu'),
 toggleMenu.addEventListener('click', ()=>{
     navMenu.classList.toggle('show')
 })
-function showMenu(){
-    navLinks.style.right = "0";
-}
-function hideMenu(){
-    navLinks.style.right = "-200px";
-}
-$('.navLinks a').click(function() {
-  $(".navLinks").collapse('hide');
-});
 
 /*HIDDEN*/
 closeMenu.addEventListener('click', ()=>{
@@ -34,3 +25,4 @@ function linkAction(){
   navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
