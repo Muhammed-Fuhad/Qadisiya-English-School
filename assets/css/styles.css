@@ -691,12 +691,44 @@ img {
   }
   
   
-  
+  /* ==== video gallery ==== */
 
+  .videogallery{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    }
+    h1{
+    font-size: 36px;
+    font-weight: 600;
+    }
+    p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    }
+  .allvideos{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+    padding-top: 100px;
+    text-align: center;
+    
+  }
 
-
-
-
+  @media (max-width : 650px) {
+    .allvideos{
+      position: relative;
+      overflow: hidden;
+      width: 95%;
+      padding-top: 3.25%;
+      align-items: center;
+      
+    }
+  }
 
 
 
