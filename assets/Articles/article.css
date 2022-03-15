@@ -1,0 +1,42 @@
+/*===== GOOGLE FONTS =====*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+.article-img img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+}
+.article-text p{
+    text-align: justify;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: poppins,sans-serif ;
+}
+.article-text a{
+    color: #f44336;
+    text-decoration: none;
+    margin-left: 25%;
+}
+.article-text a:hover{
+    color: #0f0f00;
+    transition: all ease 0.3s;
+}
+
+
+
+@media (max-width: 768px) {
+    .article-img img{
+        width: 100%;
+        height: auto;
+        object-position: center;
+        margin-left: 0;
+    }
+    .article-text p{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .article-text a{
+        margin-left: 0;
+    }
+}
